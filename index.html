@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+   
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="saveToCrudCrud(event)">
+  
+        <label for="selling">Selling Price:</label>
+  
+        <input type="price" id="price" name="price" required>
+  
+        <label for = "Productname">Product Name:</label>
+  
+        <input type = "productname" id="productname" name="productname" >
+  
+        <label for="category">Choose a Category:</label>
+
+        <select name="category" id="category">
+            <option>ElectronicsItems</option>
+            <option >FoodItems</option>
+            <option>SkincareItems</option>
+        </select>
+        <button>submit</button><br>
+        <h3>Products:</h3><br>
+        <h5>Electronics Items</h5>
+        <ul id="list1"></ul>
+        <h5>Food Items</h5>
+        <ul id="list2"></ul>
+        <h5>Skincare Items</h5>
+        <ul id="list3"></ul>
+    </form><ul id = 'ListOfCategory'></ul>
+    <script src="inex.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+</body>
+</html>
